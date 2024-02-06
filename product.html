@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="container">
-            <a class="logo" href="index.html">Statisk site</a>
+            <a class="logo" href="index.html">Shopping</a>
             <nav>
                 <a href="category.html">Kategorier</a>
                 <a href="product.html">Produkt</a>
@@ -29,13 +29,15 @@
         <a href="productlist.html">Produktliste</a>
     </nav>
     <main>
-        <ol>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="category.html">Categories</a></li>
-            <li><a href="productlist.html">Apparel</a></li>
-            <li>Sahara Team India Fanwear Round Neck Jersey</li>
-        </ol>
-        <img src="https://kea-alt-del.dk/t7/images/webp/640/1535.webp" alt="rød puma t-shirt">
+        <div class="breadcrumbs">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="productlist.html">Apparel</a></li>
+                <li>Sahara Team India Fanwear Round Neck Jersey</li>
+            </ol>
+        </div>
+        <img prox src="https://kea-alt-del.dk/t7/images/webp/640/1535.webp" alt="rød puma t-shirt">
         <section class="purchaseBox">
             <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
             <p><span class="brand">Puma</span> <span class="subcategory">T-shirt</span></p>
@@ -51,16 +53,17 @@
                 </label>
                 <button>Add to basket</button>
             </form>
+            <div class="info">
+                <h2>Product Information</h2>
+                <dl>
+                    <dt>Model name</dt>
+                    <dd>Puma t-shirt</dd>
+                    <dt>Color</dt>
+                    <dd>Red</dd>
+                </dl>
+            </div>
         </section>
-        <section class="info">
-            <h2>Product Information</h2>
-            <dl>
-                <dt>Model name</dt>
-                <dd>Puma t-shirt</dd>
-                <dt>Color</dt>
-                <dd>Red</dd>
-            </dl>
-        </section>
+
 
         <!-- <h1 class="product_headline">Produktinformation</h1>
         <div id="produktInfo">
@@ -69,6 +72,7 @@
     </main>
     <footer></footer>
     <script src="js/product.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

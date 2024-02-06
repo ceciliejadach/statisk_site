@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="container">
-            <a class="logo" href="index.html">Statisk site</a>
+            <a class="logo" href="index.html">Shopping</a>
             <nav>
                 <a href="category.html">Kategorier</a>
                 <a href="product.html">Produkt</a>
@@ -28,62 +28,97 @@
         <a href="product.html">Produkt</a>
         <a href="productlist.html">Produktliste</a>
     </nav>
-    <main>
-        <h1 class="product_headline">Produktliste</h1>
-        <div class="product_wrapper">
-            <a href="produkt.html" class="product_card">
-                <img src="img/1533.webp" alt="rød puma t-shirt">
-                <h3>Puma</h3>
-                <h4>Rød Puma t-shirt</h4>
-                <p>275,00 kr</p>
-                <p>Oprindeligt: 350,00 kr</p>
-                <p>Spar op til 20%</p>
-            </a>
-            <a href="produkt.html" class="product_card">
-                <img src="img/1533.webp" alt="rød puma t-shirt">
-                <h3>Puma</h3>
-                <h4>Rød Puma t-shirt</h4>
-                <p>275,00 kr</p>
-                <p>Oprindeligt: 350,00 kr</p>
-                <p>Spar op til 20%</p>
-            </a>
-            <a href="produkt.html" class="product_card">
-                <img src="img/1533.webp" alt="rød puma t-shirt">
-                <h3>Puma</h3>
-                <h4>Rød Puma t-shirt</h4>
-                <p>275,00 kr</p>
-                <p>Oprindeligt: 350,00 kr</p>
-                <p>Spar op til 20%</p>
-            </a>
-            <a href="produkt.html" class="product_card">
-                <img src="img/1533.webp" alt="rød puma t-shirt">
-                <h3>Puma</h3>
-                <h4>Rød Puma t-shirt</h4>
-                <p>275,00 kr</p>
-                <p>Oprindeligt: 350,00 kr</p>
-                <p>Spar op til 20%</p>
-            </a>
-            <a href="produkt.html" class="product_card">
-                <img src="img/1533.webp" alt="rød puma t-shirt">
-                <h3>Puma</h3>
-                <h4>Rød Puma t-shirt</h4>
-                <p>275,00 kr</p>
-                <p>Oprindeligt: 350,00 kr</p>
-                <p>Spar op til 20%</p>
-            </a>
-            <a href="produkt.html" class="product_card">
-                <img src="img/1533.webp" alt="rød puma t-shirt">
-                <h3>Puma</h3>
-                <h4>Rød Puma t-shirt</h4>
-                <p>275,00 kr</p>
-                <p>Oprindeligt: 350,00 kr</p>
-                <p>Spar op til 20%</p>
-            </a>
-        </div>
+    <section class="productlist_h2">
+        <h2>Produktliste</h2>
+    </section>
+    <main class="productlist_wrapper">
+        <template id="smallProductTemplate">
+            <!-- <a href="product.html"> -->
+            <article class="smallProduct">
+                <div class="product_image_container">
+                    <img class="product_image" src="https://kea-alt-del.dk/t7/api/products/1533" alt="t-shirt">
+                </div>
+                <h3>Blue T20 Indian Cricket Jersey</h3>
+                <p class="subtle">T-shirts Nike</p>
+                <p class="price"><span>Prev.</span> DKK 1595,-</p>
+                <div class="discounted">
+                    <p>Now DKK 1560,-</p>
+                    <p>-34%</p>
+                </div>
+                <a class="read_more_btn" href="product.html">Read more</a>
+            </article>
+            <!-- </a> -->
+        </template>
+        <!-- <article class="smallProduct">
+            <img src="https://kea-alt-del.dk/t7/api/products/1533" alt="t-shirt">
+            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+            <p class="subtle">T-shirts Puma</p>
+            <p class="price"><span>Prev.</span> DKK 1595,-</p>
+            <div class="discounted">
+                <p>Now DKK 1560,-</p>
+                <p>-34%</p>
+            </div>
+            <a href="product.html">Read more</a>
+        </article> -->
+        <!-- <article class="smallProduct onSale">
+            <img src="https://kea-alt-del.dk/t7/api/products/1533" alt="t-shirt">
+            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+            <p class="subtle">T-shirts Puma</p>
+            <p class="price"><span>Prev.</span> DKK 1595,-</p>
+            <div class="discounted">
+                <p>Now DKK 1560,-</p>
+                <p>-34%</p>
+            </div>
+            <a href="product.html">Read more</a>
+        </article> -->
+        <!-- <article class="smallProduct soldOut">
+            <img src="https://kea-alt-del.dk/t7/api/products/1533" alt="t-shirt">
+            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+            <p class="subtle">T-shirts Puma</p>
+            <p class="price"><span>Prev.</span> DKK 1595,-</p>
+            <div class="discounted">
+                <p>Now DKK 1560,-</p>
+                <p>-34%</p>
+            </div>
+            <a href="product.html">Read more</a>
+        </article> -->
+        <!-- <article class="smallProduct soldOut onSale">
+            <img src="https://kea-alt-del.dk/t7/api/products/1533" alt="t-shirt">
+            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+            <p class="subtle">T-shirts Puma</p>
+            <p class="price"><span>Prev.</span> DKK 1595,-</p>
+            <div class="discounted">
+                <p>Now DKK 1560,-</p>
+                <p>-34%</p>
+            </div>
+            <a href="product.html">Read more</a>
+        </article> -->
+        <!-- <article class="smallProduct">
+            <img src="https://kea-alt-del.dk/t7/api/products/1533" alt="t-shirt">
+            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+            <p class="subtle">T-shirts Puma</p>
+            <p class="price"><span>Prev.</span> DKK 1595,-</p>
+            <div class="discounted">
+                <p>Now DKK 1560,-</p>
+                <p>-34%</p>
+            </div>
+            <a href="product.html">Read more</a>
+        </article> -->
+        <!-- <article class="smallProduct onSale">
+            <img src="https://kea-alt-del.dk/t7/api/products/1533" alt="t-shirt">
+            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+            <p class="subtle">T-shirts Puma</p>
+            <p class="price"><span>Prev.</span> DKK 1595,-</p>
+            <div class="discounted">
+                <p>Now DKK 1560,-</p>
+                <p>-34%</p>
+            </div>
+            <a href="product.html">Read more</a>
+        </article>  -->
     </main>
     <script src="js/productlist.js"></script>
+    <script src="js/menu.js"></script>
     <footer></footer>
-    <script src="java.js"></script>
 </body>
 
 </html>

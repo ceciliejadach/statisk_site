@@ -1,28 +1,39 @@
 @media (min-width: 800px) {
   /*-----------PRODUKT-----------*/
-  .product_headline {
-    text-align: center;
-  }
-  #produktInfo {
-    max-width: 500px;
+  .product_wrapper {
     display: grid;
-    justify-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1100px;
+    margin: 100px auto;
+    gap: 100px;
+  }
+
+  .product_wrapper img {
+    max-width: none;
   }
 
   /*-----------PRODUKTLISTE-----------*/
-  .product_wrapper {
-    margin: 50px auto 0px;
-    max-width: 900px;
+  .productlist_wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin: 100px auto;
+    gap: 50px;
+  }
+
+  .productlist_h2 {
+    font-size: 1.5rem;
+    margin-left: 150px;
   }
 
   /*-----------KATEGORI-----------*/
 
   .category_wrapper {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 50px auto;
   }
 
   .category {
-    height: 300px;
-    border-radius: 25px;
+    padding: 40px 20px;
   }
 }
