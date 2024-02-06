@@ -20,7 +20,7 @@ function showProduct(product) {
   copy.querySelector("h3").textContent = product.productdisplayname;
   const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   copy.querySelector("img").src = imagePath;
-  copy.querySelector(".subtle").textContent = product.articletype;
+  copy.querySelector(".subtle").textContent = product.brandname;
   copy.querySelector(".price").textContent = product.price;
 
   if (product.soldout) {

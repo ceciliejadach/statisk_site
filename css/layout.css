@@ -1,15 +1,14 @@
 @media (min-width: 800px) {
   /*-----------PRODUKT-----------*/
-  .product_wrapper {
+  .purchaseBox {
+    max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 1100px;
-    margin: 100px auto;
-    gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
   }
 
-  .product_wrapper img {
-    max-width: none;
+  .purchaseBox img {
+    max-width: 500px;
   }
 
   /*-----------PRODUKTLISTE-----------*/

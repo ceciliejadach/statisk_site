@@ -12,10 +12,6 @@ video {
   display: block;
 }
 
-main {
-  margin-top: 100px;
-}
-
 /*-----------NAVIGATION-----------*/
 
 /* Placering af header  */
@@ -163,12 +159,19 @@ nav a:hover {
   }
 }
 
+/*-----------INDEX-----------*/
+.index_h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
 /*-----------PRODUKT-----------*/
 .breadcrumbs ol {
   list-style: none; /* Fjerner standardpunktstilen for <ol> */
   padding: 0;
-  margin-left: 20px;
-  margin-bottom: 30px;
+  margin: 100px 0px 30px 15px;
 }
 
 .breadcrumbs ol li {
@@ -180,21 +183,16 @@ nav a:hover {
   margin: 0 5px; /* Justerer afstanden mellem brødkrummerne */
 }
 
-.product_wrapper {
-  display: grid;
-}
-
-.product_wrapper img {
-  max-width: 500px;
-  justify-self: center;
-}
-
 .purchaseBox {
   background-color: #f9f9f9;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin: 0 5px 20px 5px;
+}
+
+.purchaseBox img {
+  margin-bottom: 10px;
 }
 
 .purchaseBox h3 {
